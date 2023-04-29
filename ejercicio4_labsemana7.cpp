@@ -17,7 +17,7 @@ struct Num* CrearNumero(float val) // crear estructura numero
 	return newNumero;
 }
 
-void AnadirNumero(struct Num **head, struct Num *num) // añadir numero a lista
+void AnadirNumero(struct Num **head, struct Num *num) // aÃ±adir numero a lista
 {
 	if (*head == NULL)
 		*head = num;
@@ -105,10 +105,13 @@ int main()
 	
 	// muestra de operaciones
 	ImprimirNumeros(head);
-	
-	cout << endl << "Suma de Numeros Ingresados: " << suma << endl;
-	cout << "Multiplicacion de Numeros Ingresados: " << multi << endl;
-	cout << "Promedio de Numeros Ingresados: " << prom << endl;
+	cout << "--------------------------------------" << endl;
+	cout << "Operaciones en los numeros ingresados" << endl;
+	cout << "--------------------------------------" << endl;
+	cout << endl << "Suma de los Numeros Ingresados: " << suma << endl;
+	cout << "Multiplicacion de los Numeros Ingresados: " << multi << endl;
+	cout << "Promedio de los Numeros Ingresados: " << prom << endl;
+	cout << "--------------------------------------" << endl;
 	
 	FreeNumeros(head);
 	return 0;
